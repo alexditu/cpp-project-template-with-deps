@@ -29,13 +29,13 @@ endif ()
 set (THIRD_PARTY_DEPS_DIR "${${THIRD_PARTY_DEPS}_SOURCE_DIR}")
 include ("${THIRD_PARTY_DEPS_DIR}/third_party_cpp_deps.cmake")
 
-message (STATUS "UsingTHIRD_PARTY_DEPS_DIR: ${THIRD_PARTY_DEPS_DIR}")
+message (STATUS "Using THIRD_PARTY_DEPS_DIR: ${THIRD_PARTY_DEPS_DIR}")
 
 
 
 # project specific options:
 
-add_compile_options (-Wall -Wextra -g -ggdb -pthread -fno-common -fstack-protector -fno-omit-frame-pointer)
+add_compile_options (-fPIC -Wall -Wextra -g -ggdb -pthread -fno-common -fstack-protector -fno-omit-frame-pointer)
 
 add_third_party_include_dir_global (${THIRD_PARTY_DEPS_DIR})
 add_third_party_lib_dir_global (${THIRD_PARTY_DEPS_DIR})
