@@ -9,6 +9,11 @@ set (CMAKE_VISIBILITY_INLINES_HIDDEN YES)
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED True)
 
+set (TOOLCHAIN "/opt/gcc-10.2.0")
+set (COMPILER_PREFIX "${TOOLCHAIN}/bin/")
+set (CMAKE_C_COMPILER "${COMPILER_PREFIX}gcc")
+set (CMAKE_CXX_COMPILER "${COMPILER_PREFIX}g++")
+
 # 3rd party deps
 include (FetchContent)
 
