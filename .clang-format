@@ -31,3 +31,4 @@ SpaceBeforeAssignmentOperators: true
 AlwaysBreakBeforeMultilineStrings: true
 
 AlwaysBreakTemplateDeclarations: true
+FixNamespaceComments: true
